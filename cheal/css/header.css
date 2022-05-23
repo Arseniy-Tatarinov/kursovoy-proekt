@@ -1,0 +1,24 @@
+header {
+  background: white;
+  text-align: center;
+}
+
+header a {
+  display: block;
+  text-decoration: none;
+  outline: none;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.logo-link {
+  margin: auto;
+  width: 30%;
+}
+
+.logo {
+  width: 6rem;
+  color: #d5b45b;
+  font-size: 2.5em;
+  padding: 0;
+}

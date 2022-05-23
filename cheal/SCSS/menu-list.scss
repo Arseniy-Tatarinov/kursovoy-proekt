@@ -1,0 +1,70 @@
+nav {
+    width: 100%;
+    display: table;
+    margin: 0 auto;
+  
+    ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  
+  .topmenu {
+    width: 100%;
+    background-color: white;
+    > li {
+      width: 33%;
+      margin: auto;
+      position: relative;
+      
+  
+      > a {
+        font-size: 16px;
+        font-weight: bold;
+        color: #404040;
+        padding: 15px 0px;
+      }
+    }
+  
+    li a:hover {
+      color: #0d9239;
+    }
+  }
+  
+  .submenu-link:after {
+    content: "";
+    color: inherit;
+    margin-left: 10px;
+  }
+  
+  .submenu {
+    background: #273037;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 5;
+    width: 180px;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: 0 0;
+    transition: .1s ease-in-out;
+  
+    a {
+      color: white;
+      text-align: left;
+      padding: 12px 15px;
+      font-size: 13px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  
+    li:last-child a {
+      border-bottom: none;
+    }
+  }
+  
+  .topmenu > li:hover .submenu {
+    opacity: 1;
+    transform: scaleY(1);
+  }
